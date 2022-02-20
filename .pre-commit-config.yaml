@@ -31,3 +31,6 @@ repos:
     rev: v1.6.8
     hooks:
       - id: actionlint-docker
+      # https://github.com/rhysd/actionlint/pull/107
+      # https://github.com/rhysd/actionlint/pull/115
+        args: [-ignore, 'reusable workflow call "\./\.github/workflows/.*\.yaml" at "uses" is not following the format']
