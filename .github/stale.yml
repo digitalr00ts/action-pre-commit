@@ -1,0 +1,6 @@
+daysUntilStale: 15
+exemptLabels:
+  - dependencies
+  - security
+  - wip
+staleLabel: stale
