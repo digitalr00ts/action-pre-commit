@@ -5,7 +5,7 @@ on:
     workflows: [CI]
     branches: [trunk]
     types: [completed]
-  workflow_dispatch:
+  workflow_dispatch: null
 
 concurrency: ${{ github.workflow }}
 

@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: ['**']
+    branches: ["**"]
     paths-ignore: [CHANGELOG.md]
-    tags-ignore: ['**']
+    tags-ignore: ["**"]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref_name }}
