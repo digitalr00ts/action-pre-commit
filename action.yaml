@@ -19,7 +19,7 @@ runs:
         key: pre-commit-${{ runner.os }}-${{ env.pythonLocation }}-${{ hashFiles('.pre-commit-config.yaml') }}
         restore-keys: pre-commit-${{ runner.os }}-
     - if: ${{ inputs.ssh-key }}
-      uses: webfactory/ssh-agent@v0.7.0
+      uses: webfactory/ssh-agent@v0.8.0
       with:
         ssh-private-key: ${{ inputs.ssh-key }}
     - name: Install pre-commit
